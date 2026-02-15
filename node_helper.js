@@ -26,8 +26,8 @@ module.exports = NodeHelper.create({
       Log.log(`setconfig path=${id}`);
     }
     this.path_images[id] = path.resolve(
-      global.root_path,
-      "modules/MMM-ImagesPhotos/uploads",
+      // global.root_path,
+      // "modules/MMM-ImagesPhotos/uploads",
       this.config[id].path
     );
     if (this.config[id].debug) {
@@ -167,4 +167,5 @@ module.exports = NodeHelper.create({
 
     return files;
   }
+  
 });
